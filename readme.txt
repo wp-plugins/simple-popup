@@ -4,7 +4,7 @@ Donate link:http://popupcloud.blogspot.com/
 Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box
 Requires at least: 3.0
 Tested up to: 3.1.2
-Stable tag: 1.1
+Stable tag: 1.2
 
 A simple, attractive, extremely fast and non annoying pop up box for your WordPress Blog. It's power lies in its ease of use.
 
@@ -24,8 +24,7 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 **Is this plugin free ?**
 
-Yes this plugin is free but there is a premium version which provide more features and support if you are impressed with free version or free version just helped you, you should buy premium version it only costs $29.
-
+Yes this plugin is free but there is a premium version which provide more features and support if you are impressed with free version or free version just helped you, you should buy premium version it only costs $29. 
 **Where to get support ?**
 
  I'll try my best to answer you queries please use WordPress forums for support.
@@ -37,6 +36,10 @@ Every major auto-responder provide professionally deisgned opt-in forms which ar
 Also Please Install  Tinymce advanced plugin after installing tinemce advanced plugin you have more advanced options available on your visual editor. 
  
 == Changelog ==
+**Version 1.2**
+
+This is the third version of this plugin, Cookies bug is fixed.
+
 **Version 1.1**
 
 This is the second version of this plugin new option called "Floating Box" is added which allows you to choose either you want the popup box to scroll with the user or just stay at center of browser window.

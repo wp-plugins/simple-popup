@@ -39,7 +39,10 @@ $("#simple-popup").bind('click',function()
 {
 	return false;
 });
-var SimplePopup_delay = setTimeout("$('#simple-popup').trigger('click')",<?php echo $delay; ?>);
+if ( $.cookie('popup_hide') != 'true' )
+{  
+	var SimplePopup_delay = setTimeout("$('#simple-popup').trigger('click')",<?php echo $delay; ?>);
+}
 });
 
 
