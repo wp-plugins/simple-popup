@@ -38,7 +38,7 @@ Also Please Install  Tinymce advanced plugin after installing tinemce advanced p
 == Changelog ==
 **Version 1.2**
 
-This is the third version of this plugin, Cookies bug is fixed.
+This is the third version of this plugin, Cookies bug is fixed...
 
 **Version 1.1**
 
