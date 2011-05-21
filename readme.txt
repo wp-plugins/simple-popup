@@ -4,7 +4,7 @@ Donate link:http://popupcloud.blogspot.com/
 Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box
 Requires at least: 3.0
 Tested up to: 3.1.2
-Stable tag: 1.2
+Stable tag: 1.3
 
 A simple, attractive, extremely fast and non annoying pop up box for your WordPress Blog. It's power lies in its ease of use.
 
