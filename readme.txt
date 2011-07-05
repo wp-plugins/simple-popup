@@ -4,7 +4,7 @@ Donate link:http://popupcloud.blogspot.com/
 Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box
 Requires at least: 3.0
 Tested up to: 3.1.2
-Stable tag: 1.4
+Stable tag: 1.5
 
 A simple, attractive, extremely fast and non annoying pop up box for your WordPress Blog. It's power lies in its ease of use.
 
@@ -36,6 +36,10 @@ Every major auto-responder provide professionally deisgned opt-in forms which ar
 Also Please Install  Tinymce advanced plugin after installing tinemce advanced plugin you have more advanced options available on your visual editor. 
  
 == Changelog ==
+**Version 1.4**
+
+Few bugs are fixed and also red close is changed to black button
+
 **Version 1.2**
 
 This is the third version of this plugin, Cookies bug is fixed...
