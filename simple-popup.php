@@ -2,8 +2,8 @@
 /*
 Plugin Name: WP Simple Popup
 Plugin URI: http://popupcloud.blogspot.com/
-Description: A simple, attractive and extremly fast popup box for your WordPress Blog. Popup is now made simple and free
-Version: 1.3
+Description: A simple, attractive and extremly fast popup box for your WordPress Blog.
+Version: 1.5
 Author: Muneeb ur Rehman
 License: GPL2
 	Copyright 2011  Muneeb ur Rehman
@@ -79,24 +79,24 @@ if ( isset($SimplePopup) && ( get_option('popup_box_enabled') =='true'  ) )
 	{
 		if ( !isset($_COOKIE['popup_hide']) )
 			{
-		//add  latest version of jquery to your blog using google cdn
+		
 		function SimplePopup_jquery_add() {
     if (!is_admin()) {
-        wp_deregister_script( 'jquery' );
-        wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js');
+       
+       
         wp_enqueue_script( 'jquery' );
       wp_register_script('jcookie',plugins_url('js/jquery.cookie.js',__FILE__ ));
     wp_enqueue_script('jcookie');
     }
 }    
-		//add latest version of jquery
+	
 		add_action('init', 'SimplePopup_jquery_add');
 		
 		
 		
-		//include html div mask in theme footer
+		
 		add_action('wp_footer','SimplePopup_html_mask');
-		//include javascript code in head		
+		
 		add_action('wp_head','SimplePopup_html_script');
 	}
 }
