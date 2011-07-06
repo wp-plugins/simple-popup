@@ -1,9 +1,15 @@
 === Simple PopUp ===
 Contributors: Muneeb 
 Donate link:http://popupcloud.blogspot.com/
+<<<<<<< .mine
+Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box,aweber
+Requires at least: 3.1
+Tested up to: 3.2
+=======
 Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box
 Requires at least: 3.1
 Tested up to: 3.2
+>>>>>>> .r405424
 Stable tag: 1.5
 
 A simple, attractive, extremely fast and non annoying pop up box for your WordPress Blog. It's power lies in its ease of use.
