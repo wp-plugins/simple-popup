@@ -10,7 +10,7 @@ Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box
 Requires at least: 3.1
 Tested up to: 3.2
 >>>>>>> .r405424
-Stable tag: 1.6.1
+Stable tag: 1.6.2
 
 A simple, attractive, extremely fast and non annoying pop up box for your WordPress Blog. It's power lies in its ease of use.
 
