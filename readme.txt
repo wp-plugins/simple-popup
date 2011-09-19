@@ -1,16 +1,11 @@
 === Simple PopUp ===
 Contributors: Muneeb 
-Donate link:http://popupcloud.blogspot.com/
-<<<<<<< .mine
-Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box,aweber
+Donate link:http://plugistan.com/wordpress-simplepop-plus/
+Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box,aweber,mailchimp,conversion,simplepop
 Requires at least: 3.1
 Tested up to: 3.2
-=======
-Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box
-Requires at least: 3.1
-Tested up to: 3.2
->>>>>>> .r405424
-Stable tag: 1.6.2
+Stable tag: 1.6.3
+
 
 A simple, attractive, extremely fast and non annoying pop up box for your WordPress Blog. It's power lies in its ease of use.
 
@@ -19,8 +14,9 @@ A simple, attractive, extremely fast and non annoying pop up box for your WordPr
 
 A simple, attractive, non-annoying, extremely fast and light-weight pop-up box for your WordPress Blog. Supports Cookies,Custom design options,scheduling and custom Visual Edior where you can put your html code which will be showed to your visitors.
 
-<a href=\"http://popupcloud.blogspot.com/\" target=\"_blank\">Simple Popup ++ </a>
+<a href=\http://plugistan.com/wordpress-simplepop-plus/\" target=\"_blank\">Premium Version Simple Popup ++</a>
 
+For Questions,Feedback,suggestions, <a href=\"http://plugistan.com/contact/\" target=\"_blank\">Click here to Contact</a>
  
 
 == Installation ==
@@ -30,7 +26,7 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 **Is this plugin free ?**
 
-Yes this plugin is free but there is a premium version which provide more features and support if you are impressed with free version or free version just helped you, you should buy premium version it only costs $29. 
+Yes this plugin is free but there is a premium version which provide more features and support if you are impressed with free version or free version just helped you, you should buy premium version it only costs $39. 
 **Where to get support ?**
 
  I'll try my best to answer you queries please use WordPress forums for support.

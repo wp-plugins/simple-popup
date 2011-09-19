@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: WP Simple Popup
-Plugin URI: http://popupcloud.blogspot.com/
+Plugin URI: http://plugistan.com/wordpress-simplepop-plus/
 Description: A simple, attractive and extremly fast popup box for your WordPress Blog.
-Version: 1.6.2
+Version: 1.6.3
 Author: Muneeb ur Rehman
 License: GPL2
 	Copyright 2011  Muneeb ur Rehman
