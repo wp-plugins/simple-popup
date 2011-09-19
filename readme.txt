@@ -14,6 +14,7 @@ A simple, attractive, extremely fast and non annoying pop up box for your WordPr
 
 A simple, attractive, non-annoying, extremely fast and light-weight pop-up box for your WordPress Blog. Supports Cookies,Custom design options,scheduling and custom Visual Edior where you can put your html code which will be showed to your visitors.
 
+
 <a href=\"http://plugistan.com/wordpress-simplepop-plus/\" target=\"_blank\">Premium Version Simple Popup ++</a>
 
 For Questions,Feedback,suggestions, <a href=\"http://plugistan.com/contact/\" target=\"_blank\">Click here to Contact</a>
