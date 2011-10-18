@@ -69,7 +69,7 @@ function SimplePopup_html_mask()
 				echo '<a id="simple-popup" name="simplepopup" href="#dialog"></a>';
 				echo '<div id="boxes"><div id="dialog" class="window">';
 				echo cp_sp_process_content(get_option('popup_box_content'));
-				echo "<p id='sp_credit_link'> <a target='_blank' href='http://plugistan.com/wordpress-simplepop-plus/'>Powered By WordPress Popup Plugin</a>  </p>";
+				
 				echo '<a class="close" href="#"></a></div></div>';
 				
 				
