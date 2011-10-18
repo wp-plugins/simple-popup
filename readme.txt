@@ -1,4 +1,4 @@
-=== Simple Popup Plugin===
+=== Simple PopUp===
 Contributors: Muneeb 
 Donate link:http://plugistan.com/wordpress-simplepop-plus/
 Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box,aweber,mailchimp,conversion,simplepop,premium,jquery,lightbox,hover,post,page,revenue,sales
