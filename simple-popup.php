@@ -63,7 +63,6 @@ function SimplePopup_html_mask()
 				echo '<a id="simple-popup" name="simplepopup" href="#dialog"></a>';
 				echo '<div id="boxes"><div id="dialog" class="window">';
 				echo get_option('popup_box_content');
-				echo "<p id='sp_credit_link'> <a target='_blank' href='http://popupcloud.blogspot.com/'>Powered By WordPress Popup Plugin</a>  </p>";
 				echo '<a class="close" href="#"></a></div></div>';
 				
 				
