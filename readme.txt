@@ -1,7 +1,7 @@
 === Simple PopUp ===
 Contributors: Muneeb 
 Donate link:http://plugistan.com/wordpress-simplepop-plus/
-Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box,aweber,mailchimp,conversion,simplepop,premium,jquery,lightbox,hover
+Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box,aweber,mailchimp,conversion,simplepop,premium,jquery,lightbox,hover,post,page,revenue,sales
 Requires at least: 3.1
 Tested up to: 3.2
 Stable tag: 1.6.4
@@ -25,9 +25,7 @@ For Questions,Feedback,suggestions, <a href=\"http://plugistan.com/contact/\" ta
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
 == Frequently Asked Questions ==
 
-**Is this plugin free ?**
 
-Yes this plugin is free but there is a premium version which provide more features and support if you are impressed with free version or free version just helped you, you should buy premium version it only costs $39. 
 **Where to get support ?**
 
  I'll try my best to answer you queries please use WordPress forums for support.
