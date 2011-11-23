@@ -3,45 +3,45 @@ function SimplePopup_javascript($delay=10)
 	{
 ?>
 <script type="text/javascript">
-
-$(document).ready(function() {	
+jQuery.noConflict()
+jQuery(document).ready(function() {	
 
 	
-	$('#simple-popup').click(function(e) {
+	jQuery('#simple-popup').click(function(e) {
 		e.preventDefault();
 		
 		
-		var id = $(this).attr('href');
-		var maskHeight = $(document).height();
-		var maskWidth = $(window).width();
-		$('#spmask').css({'width':maskWidth,'height':maskHeight});
-		$('#spmask').fadeIn(1000);	
-		$('#spmask').fadeTo("slow",0.8);	
-		var winH = $(window).height();
-		var winW = $(window).width();
-		$(id).css('top',  winH/2-$(id).height()/2);
-		$(id).css('left', winW/2-$(id).width()/2);
-		$(id).fadeIn(600);
+		var id = jQuery(this).attr('href');
+		var maskHeight = jQuery(document).height();
+		var maskWidth = jQuery(window).width();
+		jQuery('#spmask').css({'width':maskWidth,'height':maskHeight});
+		jQuery('#spmask').fadeIn(1000);	
+		jQuery('#spmask').fadeTo("slow",0.8);	
+		var winH = jQuery(window).height();
+		var winW = jQuery(window).width();
+		jQuery(id).css('top',  winH/2-jQuery(id).height()/2);
+		jQuery(id).css('left', winW/2-jQuery(id).width()/2);
+		jQuery(id).fadeIn(400);
 	
 	});
-	$('.window .close').click(function (e) {
+	jQuery('.window .close').click(function (e) {
 		e.preventDefault();
-		$.cookie('popup_hide','true');
-		$('#spmask').hide();
-		$('.window').hide();
+		jQuery.cookie('popup_hide','true',{path: '/'});
+		jQuery('#spmask').hide();
+		jQuery('.window').hide();
 	});		
 	
-	$(document).keyup(function(e) {
-  	if (e.keyCode == 27) { $('.window .close').click(); }
+	jQuery(document).keyup(function(e) {
+  	if (e.keyCode == 27) { jQuery('.window .close').click(); }
 });
 
-$("#simple-popup").bind('click',function()
+jQuery("#simple-popup").bind('click',function()
 {
 	return false;
 });
-if ( $.cookie('popup_hide') != 'true' )
+if ( jQuery.cookie('popup_hide') != 'true' )
 {  
-	var SimplePopup_delay = setTimeout("$('#simple-popup').trigger('click')",<?php echo $delay; ?>);
+	var SimplePopup_delay = setTimeout("jQuery('#simple-popup').trigger('click')",<?php echo $delay; ?>);
 }
 });
 

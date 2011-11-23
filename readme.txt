@@ -1,10 +1,10 @@
-=== Simple PopUp ===
+=== Simple PopUp===
 Contributors: Muneeb 
 Donate link:http://plugistan.com/wordpress-simplepop-plus/
 Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box,aweber,mailchimp,conversion,simplepop,premium,jquery,lightbox,hover,post,page,revenue,sales
 Requires at least: 3.1
 Tested up to: 3.2
-Stable tag: 1.6.4
+Stable tag: 1.6.9
 
 
 A simple, attractive, extremely fast and non annoying pop up box for your WordPress Blog. It's power lies in its ease of use.
@@ -28,7 +28,7 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 **Where to get support ?**
 
- I'll try my best to answer you queries please use WordPress forums for support.
+ I'll try my best to answer you queries please contact us for support.
 
 **There are not themes or opt-in forms included in this plugin ?**
 

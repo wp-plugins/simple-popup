@@ -12,8 +12,8 @@ function simplepopup_enqueue_editor() {
 	wp_print_scripts('editor');
 	wp_print_scripts('editor-functions');
 
-	/* Include thе link dialog functions */
-	require_once ABSPATH . 'wp-admin/includes/internal-linking.php';
+	/* Include the link dialog functions */
+	include ABSPATH . 'wp-admin/includes/internal-linking.php';
 	wp_print_scripts('wplink');
 	wp_print_styles('wplink');
 	add_action('tiny_mce_preload_dialogs', 'wp_link_dialog');
@@ -27,13 +27,18 @@ function simplepopup_enqueue_editor() {
 	//remove_all_filters('mce_external_plugins');
 }
 // create custom plugin settings menu
+
 add_action('admin_menu', 'sp_create_menu');
-add_action('admin_head','simplepopup_enqueue_editor');
+global $wp_version;
+if ( version_compare( $wp_version, '3.1.4', '<=' ) ){
+	add_action('admin_head','simplepopup_enqueue_editor');
+	add_action( 'admin_footer', 'wp_tiny_mce_preload_dialogs' );
+}
 
 function sp_create_menu() {
 
 	//create new top-level menu
-	add_menu_page('SimplePopUp', 'SimplePopUp', 'administrator', __FILE__, 'sp_settings_page',plugins_url('/images/icon.jpg', __FILE__));
+	add_menu_page('SimplePop', 'SimplePop', 'manage_options', __FILE__, 'sp_settings_page',plugins_url('/images/icon.jpg', __FILE__));
 
 	//call register settings function
 	add_action( 'admin_init', 'register_mysettings' );
@@ -49,12 +54,13 @@ function register_mysettings() {
 	register_setting('sp-settings-group','popup_box_rounded_corner');
 	register_setting('sp-settings-group','popup_box_enabled');
 	register_setting('sp-settings-group','popup_box_floating');
+	register_setting('sp-settings-group','popup_box_visits');
 }
 
 function sp_settings_page() {
 ?>
 <div class="wrap">
-<h2>WordPress SimplePopUp Options</h2>
+<h2>WordPress SimplePop Options</h2>
 
 <form method="post" action="options.php">
     <?php settings_fields( 'sp-settings-group' ); ?>
@@ -101,7 +107,7 @@ function sp_settings_page() {
         <tr valign="top">
         <th scope="row">HTML Content</th>
         <td>
-        	<?php /*wp_tiny_mce(false,array('editor_selector'=> 'simple-popup-editor'));*/ add_action( 'admin_footer', 'wp_tiny_mce_preload_dialogs' ); ?>
+        	<?php /*wp_tiny_mce(false,array('editor_selector'=> 'simple-popup-editor'));*/  ?>
         	<div id="poststuff">
 	<div id="<?php echo user_can_richedit() ? 'postdivrich' : 'postdiv'; ?>" >
 		

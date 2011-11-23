@@ -6,7 +6,7 @@
   position:absolute;
   left:0;
   top:0;
-  z-index:9000;
+  z-index:9999;
   background-color:#000;
   display:none;
 }
@@ -33,7 +33,7 @@ else
 }
 
 #boxes #dialog {
-  max-width:700px; 
+  max-width:800px; 
   height:auto;
   _width:0;
   white-space:normal;

@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: WP Simple Popup
+Plugin Name: WP SimplePop
 Plugin URI: http://plugistan.com/wordpress-simplepop-plus/
 Description: A simple, attractive and extremly fast popup box for your WordPress Blog.
-Version: 1.6.4
+Version: 1.6.9
 Author: Muneeb ur Rehman
 License: GPL2
 	Copyright 2011  Muneeb ur Rehman
@@ -19,7 +19,7 @@ License: GPL2
 
 	You should have received a copy of the GNU General Public License
 	along with this program; if not, write to the Free Software
-	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA 
+	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
 require_once('js/modal.php');
@@ -52,7 +52,13 @@ if (!class_exists("SimplePopup"))
 			
 		}
 }
-
+if(!function_exists('cp_sp_process_content')){
+        function cp_sp_process_content($content){
+                        $content = apply_filters('the_content', $content);
+                	$content = str_replace(']]>', ']]&gt;', $content);
+                	return $content;
+                }
+}
 $SimplePopup = new SimplePopup();
 
 function SimplePopup_html_mask()
@@ -62,7 +68,8 @@ function SimplePopup_html_mask()
 						</div>';
 				echo '<a id="simple-popup" name="simplepopup" href="#dialog"></a>';
 				echo '<div id="boxes"><div id="dialog" class="window">';
-				echo get_option('popup_box_content');
+				echo cp_sp_process_content(get_option('popup_box_content'));
+				
 				echo '<a class="close" href="#"></a></div></div>';
 				
 				
@@ -99,4 +106,14 @@ if ( isset($SimplePopup) && ( get_option('popup_box_enabled') =='true'  ) )
 		add_action('wp_head','SimplePopup_html_script');
 	}
 }
+function simplepop_offer_menu(){
+	add_submenu_page( "simple-popup/sp-options.php", "WordPress SimplePop Plus", "Preimum Version", "manage_options", __FILE__, "simplepop_offer" );
+}
+if( is_admin() ){
+	add_action('admin_menu','simplepop_offer_menu');
+	function simplepop_offer(){
+		include("offer.htm");
+	}
+}
+
 ?>
