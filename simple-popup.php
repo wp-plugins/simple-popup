@@ -6,7 +6,7 @@ Description: A simple, attractive and extremly fast popup box for your WordPress
 Version: 1.7
 Author: Muneeb ur Rehman
 License: GPL2
-	Copyright 2011  Muneeb ur Rehman
+  	Copyright 2011  Muneeb ur Rehman
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as 
