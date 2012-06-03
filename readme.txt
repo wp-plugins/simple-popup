@@ -18,7 +18,6 @@ A simple, attractive, non-annoying, extremely fast and light-weight pop-up box f
 <a href=\"http://imuneeb.com/wordpress-simple-popup-plugin/\" target=\"_blank\">Premium Version WP SimplePop Plus</a>
 
 [For Questions,Feedback,suggestions](http://imuneeb.com/contact/)
- 
 
 == Installation ==
 
