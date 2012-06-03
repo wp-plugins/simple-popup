@@ -38,7 +38,7 @@ if ( version_compare( $wp_version, '3.1.4', '<=' ) ){
 function sp_create_menu() {
 
 	//create new top-level menu
-	add_menu_page('SimplePop', 'SimplePop', 'manage_options', __FILE__, 'sp_settings_page',plugins_url('/images/icon.jpg', __FILE__));
+	add_menu_page('SimplePop', 'SimplePop', 'manage_options', __FILE__, 'sp_settings_page', __FILE__);
 
 	//call register settings function
 	add_action( 'admin_init', 'register_mysettings' );

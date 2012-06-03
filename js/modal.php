@@ -3,7 +3,6 @@ function SimplePopup_javascript($delay=10)
 	{
 ?>
 <script type="text/javascript">
-jQuery.noConflict()
 jQuery(document).ready(function() {	
 
 	
