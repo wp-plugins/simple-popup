@@ -15,9 +15,8 @@ A simple, attractive, extremely fast and non annoying pop up box for your WordPr
 A simple, attractive, non-annoying, extremely fast and light-weight pop-up box for your WordPress Blog. Supports Cookies,Custom design options,scheduling and custom Visual Edior where you can put your html code which will be showed to your visitors.
 
 
-<a href=\"http://imuneeb.com/wordpress-simple-popup-plugin/\" target=\"_blank\">Premium Version WP SimplePop Plus</a>
+For more advanced features be sure to check out our premium version of the plugin, <a href="http://imuneeb.com/wordpress-simple-popup-plugin/">WordPress Simple Popup Plus</a>
 
-[For Questions,Feedback,suggestions](http://imuneeb.com/contact/)
 
 == Installation ==
 
@@ -33,8 +32,8 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 Every major auto-responder provide professionally deisgned opt-in forms which are 1000% better then anyother theme or forms I'll recommended you to use those forms grab the code from your auto-responder and paste the code in HTML Content field.
 
-Also Please Install  Tinymce advanced plugin after installing tinemce advanced plugin you have more advanced options available on your visual editor. 
- 
+Also Please Install  Tinymce advanced plugin after installing tinemce advanced plugin you have more advanced options available on your visual editor.
+
 == Changelog ==
 
 **Version 1.5**  
