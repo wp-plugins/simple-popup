@@ -1,12 +1,12 @@
 <?php
 /*
 Plugin Name: WP SimplePop
-Plugin URI: http://imuneeb.com/wordpress-simple-popup-plugin/
+Plugin URI: http://muneeb.me/wordpress-simple-popup-plugin/
 Description: A simple, attractive and extremly fast popup box for your WordPress Blog.
-Version: 1.7.1
+Version: 1.7.2
 Author: Muneeb ur Rehman
 License: GPL2
-  	Copyright 2011  Muneeb ur Rehman http://imuneeb.com/
+  	Copyright 2011  Muneeb ur Rehman http://muneeb.me/contact/
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as 
@@ -107,11 +107,16 @@ if ( isset($SimplePopup) && ( get_option('popup_box_enabled') =='true'  ) )
 	}
 }
 function simplepop_offer_menu(){
-	add_submenu_page( "simple-popup/sp-options.php", "WordPress SimplePop Plus", "Preimum Version", "manage_options", __FILE__, "simplepop_offer" );
+	add_submenu_page( "simple-popup/sp-options.php", "WordPress SimplePop Plus", "Premium Version", "manage_options", __FILE__, "simplepop_offer" );
 }
 if( is_admin() ){
 	add_action('admin_menu','simplepop_offer_menu');
 	function simplepop_offer(){
+		ob_start();
+
+		wp_redirect('http://muneeb.me/wordpress-simple-popup-plugin/');
+		
+		exit;
 		include("offer.htm");
 	}
 }
