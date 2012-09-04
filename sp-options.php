@@ -38,7 +38,7 @@ if ( version_compare( $wp_version, '3.1.4', '<=' ) ){
 function sp_create_menu() {
 
 	//create new top-level menu
-	add_menu_page('SimplePop', 'SimplePop', 'manage_options', __FILE__, 'sp_settings_page', __FILE__);
+	add_menu_page('SimplePop', 'SimplePop', 'manage_options', __FILE__, 'sp_settings_page');
 
 	//call register settings function
 	add_action( 'admin_init', 'register_mysettings' );
@@ -105,7 +105,7 @@ function sp_settings_page() {
         </tr>
         
         <tr valign="top">
-        <th scope="row">HTML Content</th>
+        <th scope="row">Popup Content</th>
         <td>
         	<?php /*wp_tiny_mce(false,array('editor_selector'=> 'simple-popup-editor'));*/  ?>
         	<div id="poststuff">
