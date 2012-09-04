@@ -15,7 +15,7 @@ A simple, attractive, extremely fast and non annoying pop up box for your WordPr
 A simple, attractive, non-annoying, extremely fast and light-weight pop-up box for your WordPress Blog. Supports Cookies,Custom design options,scheduling and custom Visual Edior where you can put your html code which will be showed to your visitors.
 
 
-For more advanced features be sure to check out our premium version of the plugin, <a href="http://imuneeb.com/wordpress-simple-popup-plugin/">WordPress Simple Popup Plus</a>
+For more advanced features be sure to check out our premium version of the plugin, <a href="http://muneeb.me/wordpress-simple-popup-plugin/">WordPress Simple Popup Plus</a>
 
 
 == Installation ==
