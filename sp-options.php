@@ -1,39 +1,7 @@
 <?php
-function simplepopup_enqueue_editor() {
-	wp_enqueue_script('common');
-	wp_enqueue_script('jquery-affect');
-	wp_admin_css('thickbox');
-	wp_print_scripts('post');
-	wp_print_scripts('media-upload');
-	wp_print_scripts('jquery');
-	wp_print_scripts('jquery-ui-core');
-	wp_print_scripts('jquery-ui-tabs');
-	wp_print_scripts('tiny_mce');
-	wp_print_scripts('editor');
-	wp_print_scripts('editor-functions');
 
-	/* Include the link dialog functions */
-	include ABSPATH . 'wp-admin/includes/internal-linking.php';
-	wp_print_scripts('wplink');
-	wp_print_styles('wplink');
-	add_action('tiny_mce_preload_dialogs', 'wp_link_dialog');
-
-	add_thickbox();
-	wp_tiny_mce();
-	wp_admin_css();
-	wp_enqueue_script('utils');
-	do_action("admin_print_styles-post-php");
-	do_action('admin_print_styles');
-	//remove_all_filters('mce_external_plugins');
-}
-// create custom plugin settings menu
 
 add_action('admin_menu', 'sp_create_menu');
-global $wp_version;
-if ( version_compare( $wp_version, '3.1.4', '<=' ) ){
-	add_action('admin_head','simplepopup_enqueue_editor');
-	add_action( 'admin_footer', 'wp_tiny_mce_preload_dialogs' );
-}
 
 function sp_create_menu() {
 
@@ -50,11 +18,11 @@ function register_mysettings() {
 	register_setting( 'sp-settings-group', 'popup_box_content' );
 	register_setting( 'sp-settings-group', 'popup_box_delay' );
 	register_setting( 'sp-settings-group', 'popup_box_border_color' );
-	register_setting('sp-settings-group','popup_box_border_width');
-	register_setting('sp-settings-group','popup_box_rounded_corner');
-	register_setting('sp-settings-group','popup_box_enabled');
-	register_setting('sp-settings-group','popup_box_floating');
-	register_setting('sp-settings-group','popup_box_visits');
+	register_setting( 'sp-settings-group', 'popup_box_border_width');
+	register_setting( 'sp-settings-group', 'popup_box_rounded_corner');
+	register_setting( 'sp-settings-group', 'popup_box_enabled');
+	register_setting( 'sp-settings-group', 'popup_box_floating');
+	register_setting( 'sp-settings-group', 'popup_box_visits');
 }
 
 function sp_settings_page() {
@@ -77,7 +45,7 @@ function sp_settings_page() {
          
         <tr valign="top">
         <th scope="row">Delay Time</th>
-        <td><input type="text" name="popup_box_delay" value="<?php echo get_option('popup_box_delay'); ?>" />Ms</td>
+        <td><input type="text" name="popup_box_delay" value="<?php echo get_option('popup_box_delay'); ?>" />ms</td>
         </tr>
         
         <tr valign="top">
@@ -97,7 +65,7 @@ function sp_settings_page() {
         
         <tr valign="top">
         <th scope="row">Border Width</th>
-        <td><input type="number" name="popup_box_border_width" value="<?php echo get_option('popup_box_border_width'); ?>" />eg - (11)</td>
+        <td><input type="number" name="popup_box_border_width" value="<?php echo get_option('popup_box_border_width'); ?>" />px</td>
         </tr>
         <tr valign="top">
         <th scope="col">Rounded Corners (true/false)</th>
@@ -107,33 +75,19 @@ function sp_settings_page() {
         <tr valign="top">
         <th scope="row">Popup Content</th>
         <td>
-        	<?php /*wp_tiny_mce(false,array('editor_selector'=> 'simple-popup-editor'));*/  ?>
-        	<div id="poststuff">
-	<div id="<?php echo user_can_richedit() ? 'postdivrich' : 'postdiv'; ?>" >
-		
-		<?php the_editor(get_option('popup_box_content')); ?>
-		
-		
-	</div>
-	<script type="text/javascript">
-	
-	function sp_content_save(){
-		var obj = document.getElementById('popup_box_content');
-		var content = document.getElementById('content');
-		tinyMCE.triggerSave(0,1);
-		obj.value = content.value;
-	}
-		
-	</script>
-	<textarea class="simple-popup-editor" id="popup_box_content" name="popup_box_content" style="display:none"></textarea>
-</div>
-        	</td>
+        	<?php if ( function_exists( 'wp_editor' ) ): ?>
+        		<?php wp_editor( get_option('popup_box_content'), 'popup_box_content' ) ?>	
+        	<?php else: ?>
+        		<textarea rows="20" cols="60" id="popup_box_content" name="popup_box_content"><?php echo  get_option('popup_box_content'); ?></textarea>
+        		<p class="description">The visual editor is only supported on WordPress version 3.3+ please upgrade your WP installation to use visual editor with this plugin.</p>
+        	<?php endif; ?>
+        </td>
         </tr>
         
     </table>
     
     <p class="submit">
-    <input type="submit" onclick="sp_content_save()" class="button-primary"  value="<?php _e('Save Changes') ?>" />
+    <input type="submit" class="button-primary"  value="<?php _e('Save Changes') ?>" />
     </p>
 
 </form>

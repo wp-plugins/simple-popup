@@ -4,7 +4,7 @@ Donate link:http://muneeb.me/wordpress-simple-popup-plugin/
 Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box,aweber,mailchimp,conversion,simplepop,premium,jquery,lightbox,hover,post,page,revenue,sales
 Requires at least: 3.1
 Tested up to: 3.4
-Stable tag: 1.7.1
+Stable tag: 1.8
 
 
 A simple, attractive, extremely fast and non annoying pop up box for your WordPress Blog. It's power lies in its ease of use.
@@ -32,9 +32,12 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 Every major auto-responder provide professionally deisgned opt-in forms which are 1000% better then anyother theme or forms I'll recommended you to use those forms grab the code from your auto-responder and paste the code in HTML Content field.
 
-Also Please Install  Tinymce advanced plugin after installing tinemce advanced plugin you have more advanced options available on your visual editor.
+Also please install Tinymce advanced plugin after installing tinemce advanced plugin you have more advanced options available on your visual editor.
 
 == Changelog ==
+
+**Version 1.8**  
+Deprecated code removed,small bug fixes and improvements. The visual editor will now only works with WordPress version 3.3 or higher.
 
 **Version 1.5**  
 Jquery bug fixed
