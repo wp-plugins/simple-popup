@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP SimplePop
 Plugin URI: http://muneeb.me/wordpress-simple-popup-plugin/
-Description: A simple, attractive and extremly fast popup box for your WordPress Blog.
+Description: A simple, attractive and extremely fast popup box for your WordPress Blog.
 Version: 1.8
 Author: Muneeb ur Rehman
 License: GPL2
