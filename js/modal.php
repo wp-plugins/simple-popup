@@ -40,7 +40,9 @@ jQuery("#simple-popup").bind('click',function()
 });
 if ( jQuery.cookie('popup_hide') != 'true' )
 {  
-	var SimplePopup_delay = setTimeout("jQuery('#simple-popup').trigger('click')",<?php echo $delay; ?>);
+	setTimeout( function() {
+		jQuery('#simple-popup').click();
+	}, <?php echo esc_js( $delay ) ?> );
 }
 });
 
