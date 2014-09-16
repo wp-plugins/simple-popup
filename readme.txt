@@ -6,7 +6,7 @@ Requires at least: 3.1
 Tested up to: 4.0
 
 
-A simple, attractive, extremely fast and non annoying pop up box for your WordPress Blog. It's power lies in its ease of use.
+A simple, attractive, extremely fast and non annoying pop up box for your WordPress Blog. Simple's power lies in its ease of use.
 
 == Description ==
  [vimeo http://vimeo.com/23107662]
