@@ -16,6 +16,9 @@ A simple, attractive, non-annoying, extremely fast and light-weight pop-up box f
 
 For more advanced features be sure to check out our premium version of the plugin, <a href="http://muneeb.me/wordpress-simple-popup-plugin/">WordPress Simple Popup Plus</a>
 
+== Screenshots ==
+
+Please click on the link to visit <a href="http://muneeb.me/wordpress-simple-popup-plugin/">Screenshots page</a>.
 
 == Installation ==
 
