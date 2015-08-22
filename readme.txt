@@ -3,7 +3,7 @@ Contributors: Muneeb
 Donate link:http://muneeb.me/wordpress-simple-popup-plugin/
 Tags: popup,premium,cookies,exit popup,simple pop-up,email,video,bar,modal box,aweber,mailchimp,conversion,simplepop,premium,jquery,lightbox,hover,post,page,revenue,sales,rocket plugins, rocket
 Requires at least: 3.1
-Tested up to: 4.1.1
+Tested up to: 4.3
 
 
 A simple, attractive, extremely fast and non annoying pop up box for your WordPress Blog. Simple's power lies in its ease of use.
